@@ -3,6 +3,7 @@ package ru.nanit.cdrop.listeners;
 import java.util.List;
 import java.util.Random;
 
+import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -26,6 +27,11 @@ public class BlockBreakListener implements Listener {
 	@EventHandler
 	public void onBlockBreak(BlockBreakEvent event) {
 		Player player = event.getPlayer();
+
+		if(player.getGameMode().equals(GameMode.CREATIVE)){
+			return;
+		}
+
 		Block block = event.getBlock();
 		Material material = block.getType();
 
