@@ -1,0 +1,23 @@
+blocks:
+  grass:
+    id: 'GRASS_BLOCK'
+    drop:
+      diamond:
+        id: 'DIAMOND'
+        chance: 100
+        count_min: 1
+        count_max: 3
+        permission: 'customdrop.grass.diamond'
+      sponge:
+        id: 'SPONGE'
+        chance: 50
+        count_min: 2
+        count_max: 5
+  dirt:
+    id: 'DIRT'
+    drop:
+      stone:
+        id: 'STONE'
+        chance: 30
+        count_min: 1
+        count_max: 2

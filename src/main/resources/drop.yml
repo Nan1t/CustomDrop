@@ -1,0 +1,27 @@
+# This is a list of block that drop you want to change
+blocks:
+  # You can add any quantity block in config, just add new config block like grass or dirt. Block name may be anything
+  grass:
+    id: 'GRASS_BLOCK' # Material id's you can find here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    drop:
+      # You can add any quantity drop for every block. Just add new item
+      diamond:
+        id: 'DIAMOND'
+        chance: 100
+        count_min: 1
+        count_max: 3
+        # You can add permission to every drop. If player has this permission, drop will be dropped with defined chance
+        permission: 'customdrop.grass.diamond'
+      sponge:
+        id: 'SPONGE'
+        chance: 50
+        count_min: 2
+        count_max: 5
+  dirt:
+    id: 'DIRT'
+    drop:
+      stone:
+        id: 'STONE'
+        chance: 30
+        count_min: 1
+        count_max: 2

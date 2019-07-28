@@ -1,0 +1,6 @@
+ru/nanit/cdrop/CustomDrop.class
+ru/nanit/cdrop/listeners/BlockBreakListener.class
+ru/nanit/cdrop/storage/DropStorage.class
+ru/nanit/cdrop/storage/Configuration.class
+ru/nanit/cdrop/data/Drop.class
+ru/nanit/cdrop/commands/AdminCommands.class
