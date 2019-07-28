@@ -1,9 +1,0 @@
-name: 'CustomDrop'
-main: 'ru.nanit.cdrop.CustomDrop'
-version: '1.0'
-author: 'Nanit'
-api-version: '1.13'
-commands:
-  customdrop:
-    aliases: ['csd']
-    permission: 'customdrop.admin'

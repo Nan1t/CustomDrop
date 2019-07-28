@@ -44,6 +44,12 @@ public class DropStorage {
 
 			List<Drop> dropList = new ArrayList<>();
 			Material mat = Material.getMaterial(blockSection.getString("id"));
+
+			if(mat == null){
+				logger.severe("Failed to load block with material " + blockSection.getString("id"));
+				continue;
+			}
+
 			Set<String> drops = blockSection.getConfigurationSection("drop").getKeys(false);
 			
 			for(String dropName : drops) {
@@ -58,7 +64,7 @@ public class DropStorage {
 				if(material != null){
 					dropList.add(new Drop(material, permission, chance, countMin, countMax));
 				} else {
-					logger.severe("Failed to load block drop with material '" + dropSection.getString("id") + "'");
+					logger.severe("Failed to load drop with material '" + dropSection.getString("id") + "'");
 				}
 			}
 			

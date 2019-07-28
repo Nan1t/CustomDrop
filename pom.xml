@@ -22,14 +22,6 @@
             <version>1.13-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-
-        <dependency>
-            <groupId>org.spigot</groupId>
-            <artifactId>Spigot-server</artifactId>
-            <version>1.13-R0.1-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libs/spigot-1.13.2.jar</systemPath>
-        </dependency>
     </dependencies>
 
     <build>
